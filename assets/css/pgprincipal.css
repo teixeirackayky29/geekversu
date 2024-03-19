@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Jomhuria';
+}
+
+header{
+    background-color: #4B0096;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content:  space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    color: #FFE600;
+    font-family: 'Jomhuria', sans-serif;
+    font-size: 60px;
+}
+
+.nav-bar .btn-social button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    
+}
+
+.nav-bar .login-button button{
+    margin: 5px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    align-items:center;
+}
+
+.login-button button{
+    border: none;
+    background-color: transparent;
+    padding: 10px 15px;
+}
+
+.login-button button a{
+    border: none;
+    color: rgb(242, 240, 240);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.bottom-header{
+    background-color: #000000;
+}
+
+.bottom-header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.bottom-header nav ul li a{
+    color: #fff;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    transition: .2s;
+    font-size: 30px;
+    
+}
+
+.bottom-header nav ul li a img{
+    width: 30px;
+    height: 25px;
+}
+
+.bottom-header nav ul li a:hover{
+    background-color: #FFE600;
+    color: #4B0096;
+    box-shadow: inset 0 0 8px #0000005b;
+}
+
+.drop-hover{
+    position: relative;
+}
+
+.drop-hover .drop{
+    position: absolute;
+    background-color: #4e4949;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .4s;
+    padding: 0px;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+.drop-hover .drop a{
+    padding: 0;
+}
+
+.drop-hover:hover .drop{
+    height: 180px;
+}
+
+/*CARROSEL*/
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input{
+    display: none;
+}
+
+.nav-manual label{
+    display: none;
+}
+
+/*LEGENDA DAS IMAGENS DO CARROSEL*/
+.slider-content .legenda{
+    position: absolute;
+    bottom: 35px;
+    left: 15px;
+    background-color: rgba(179, 23, 199);
+    color: #000000; 
+    padding: 10px; 
+    border-radius: 15px 0px 0px 0px; 
+    font-size: 16px;
+    border: 2px solid #FAE1A0;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.slider-content .legenda2, .legenda3, .legenda4{
+    position: absolute;
+    bottom: 35px; 
+    left: 15px; 
+    background-color: rgba(179, 23, 199);
+    color: #fff; 
+    padding: 10px;
+    border-radius: 15px 0px 0px 0px; 
+    font-size: 16px;
+    border: 2px solid #040404;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.slider-content .legenda a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.legenda2, .legenda3, a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.legenda4 a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Rogue hero';
+}
+/*LEGENDA DAS IMAGENS DO CARROSEL*/
+
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img{
+   width: 110%; 
+   height: 409px;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 28%;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #4B0096;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: #FFE600;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, 
+#radio2:checked ~ .nav-auto .auto-btn2, 
+#radio3:checked ~ .nav-auto .auto-btn3, 
+#radio4:checked ~ .nav-auto .auto-btn4{
+    background-color: #FFE600;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .primeiro{
+    margin-left: -75%;
+}
+
+
+/*FINAL DO CARROSEL*/
+
+main{
+    background-color: #EDE9E9;
+}
+
+.imgmain, .imgmain1{
+    padding: 80px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.play, .mario, .xbox{
+    width: 168px;
+    height: 200px;
+}
+
+.ff, .tablet{
+    width: 420px;
+    height: 210px;
+}
+
+ul .leg, .leg1{
+    font-size: 30px;
+    margin: 0px;
+}
+
+hr{
+    color: #000000;
+    border: 1px solid #000000;
+}
+footer{
+    background-color: #4B0096;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.footercontainer{
+    width: 100%;
+    padding: 70px 10px 20px;
+}
+
+.footer-content{
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/*.btn-footer{
+    border-radius: 10px;
+    border: 2px solid #FFE600;
+    text-decoration: none;
+}*/
+
+.btn-footer a{
+    text-decoration: none;   
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn-footer button{
+    background: transparent;
+}
+
+.subs{
+    color: #fff;
+    border: 2px solid #FFE600;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.subs:hover {
+    background-color: #b2b263;
+    border: 2px solid #4B0096;
+}
+
+.subs:hover a{
+    color: #000000
+}
+
+.footercontainer h2{
+    font-size: 40px;
+}
+
+.footercontainer p{
+    font-size: 25px;
+}
+.footer-copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-copy ul{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.footer-copy ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer-copy ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+.footer-copy ul li a:hover{
+    border-bottom: 2px solid #000000;
+}
